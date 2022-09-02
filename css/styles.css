@@ -156,15 +156,19 @@ li {
 .footer {
   width: 85%;
   margin: 0 auto;
+  height: 100%;
   padding: 2rem 0;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
 }
-
+.footer .left .event-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: var(--light-grey-color);
+  margin: 1rem 0;
+}
 .footer .left .logo {
   display: flex;
-  margin-bottom: 1rem;
   flex-direction: column;
   align-items: flex-start;
   line-height: 1;
