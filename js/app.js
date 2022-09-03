@@ -1,15 +1,3 @@
-$(document).ready(function () {
-    $('.slider').slick({
-        dots: true,
-        autoplay: true,
-        speed: 1000,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    });
-});
-
-
 const navbar = document.querySelector(".navigation_wrapper");
 const links = document.getElementById("links");
 const toggle = document.querySelector(".hamburger");

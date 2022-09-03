@@ -111,6 +111,14 @@ li {
   filter: grayscale(1);
 }
 
+.navigation_bar .logo .AU-logo {
+  
+}
+
+.navigation_bar .logo .MIT-logo {
+  width: 70px;
+}
+
 .navigation_bar .logo h1 {
   color: var(--primary-color);
   font-size: 1.85rem;
@@ -161,12 +169,19 @@ li {
   display: flex;
   justify-content: space-between;
 }
+
 .footer .left .event-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: var(--light-grey-color);
   margin: 1rem 0;
 }
+
+.footer .left .event-list span p {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
 .footer .left .logo {
   display: flex;
   flex-direction: column;
@@ -221,8 +236,10 @@ li {
   font-weight: 500;
 }
 
-.copyright p span {
+.copyright p a {
   color: var(--primary-color);
+  display: inline-block;
+  text-decoration: underline dotted;
 }
 
 .line {
@@ -253,7 +270,7 @@ li {
 
 .right div {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: flex-start;
   margin-bottom: 0.8rem;
 }
@@ -309,7 +326,8 @@ li {
 }
 
 .showcase .action {
-  margin: 3rem 0;
+  display: flex;
+  margin-top: 2rem;
 }
 
 .showcase .action .action_primary {
@@ -348,11 +366,12 @@ li {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+  padding: 2rem;
 }
 
 .image_grid img {
   width: 100%;
-  height: 600px;
+  height: 100%;
   object-fit: contain;
   border-radius: 0px;
 }
@@ -411,7 +430,7 @@ li {
 }
 
 .about .image img {
-  width: 70%;
+  width: 80%;
   position: relative;
   z-index: 2;
   display: block;
@@ -705,4 +724,34 @@ li {
 .review .body p {
   line-height: 1.6;
   font-size: 0.95rem;
+}
+
+.career-guidance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--primary-color) url("../assets/images/pattern.png");
+  background-blend-mode: overlay;
+  background-size: contain;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.career-guidance p {
+  color: var(--black-color);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.career-guidance span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.career-guidance span h3 {
+  color: var(--light-color);
+  font-size: 2rem;
 }
